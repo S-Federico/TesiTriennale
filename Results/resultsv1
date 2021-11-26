@@ -1,0 +1,470 @@
+############  07  ###################
+############Data from class correlation based-feature selection###################
+   id  gender  ...  tqwt_kurtosisValue_dec_36  class
+0   0       1  ...                    18.9405      1
+1   0       1  ...                    45.1780      1
+2   0       1  ...                     4.7666      1
+3   1       0  ...                     4.0603      1
+4   1       0  ...                     6.1164      1
+
+[5 rows x 342 columns]
+      id  gender  ...  tqwt_kurtosisValue_dec_36  class
+751  250       0  ...                     6.8671      0
+752  250       0  ...                    28.4170      0
+753  251       0  ...                     5.0424      0
+754  251       0  ...                     3.7131      0
+755  251       0  ...                     3.1527      0
+
+[5 rows x 342 columns]
+############Data from random feature selection###################
+   id  gender  ...  tqwt_kurtosisValue_dec_36  class
+0   0       1  ...                    18.9405      1
+1   0       1  ...                    45.1780      1
+2   0       1  ...                     4.7666      1
+3   1       0  ...                     4.0603      1
+4   1       0  ...                     6.1164      1
+
+[5 rows x 342 columns]
+      id  gender  ...  tqwt_kurtosisValue_dec_36  class
+751  250       0  ...                     6.8671      0
+752  250       0  ...                    28.4170      0
+753  251       0  ...                     5.0424      0
+754  251       0  ...                     3.7131      0
+755  251       0  ...                     3.1527      0
+
+[5 rows x 342 columns]
+#################  with class correlation  #####################
+###################  Nearest Neighbors  ##################
+Trained in : 0.015625
+[[  6  33]
+ [ 10 103]]
+              precision    recall  f1-score   support
+
+           0       0.38      0.15      0.22        39
+           1       0.76      0.91      0.83       113
+
+    accuracy                           0.72       152
+   macro avg       0.57      0.53      0.52       152
+weighted avg       0.66      0.72      0.67       152
+
+###################  Gradient Boosting Classifier  ##################
+Trained in : 9.40625
+[[ 21  18]
+ [  5 108]]
+              precision    recall  f1-score   support
+
+           0       0.81      0.54      0.65        39
+           1       0.86      0.96      0.90       113
+
+    accuracy                           0.85       152
+   macro avg       0.83      0.75      0.77       152
+weighted avg       0.84      0.85      0.84       152
+
+###################  Decision Tree  ##################
+Trained in : 0.234375
+[[23 16]
+ [18 95]]
+              precision    recall  f1-score   support
+
+           0       0.56      0.59      0.57        39
+           1       0.86      0.84      0.85       113
+
+    accuracy                           0.78       152
+   macro avg       0.71      0.72      0.71       152
+weighted avg       0.78      0.78      0.78       152
+
+###################  Random Forest  ##################
+Trained in : 10.578125
+[[ 21  18]
+ [  2 111]]
+              precision    recall  f1-score   support
+
+           0       0.91      0.54      0.68        39
+           1       0.86      0.98      0.92       113
+
+    accuracy                           0.87       152
+   macro avg       0.89      0.76      0.80       152
+weighted avg       0.87      0.87      0.86       152
+
+###################  Ada Boost  ##################
+Trained in : 1.9375
+[[ 22  17]
+ [ 10 103]]
+              precision    recall  f1-score   support
+
+           0       0.69      0.56      0.62        39
+           1       0.86      0.91      0.88       113
+
+    accuracy                           0.82       152
+   macro avg       0.77      0.74      0.75       152
+weighted avg       0.81      0.82      0.82       152
+
+#################  with random features  #####################
+###################  Nearest Neighbors  ##################
+Trained in : 0.015625
+[[18 21]
+ [14 99]]
+              precision    recall  f1-score   support
+
+           0       0.56      0.46      0.51        39
+           1       0.82      0.88      0.85       113
+
+    accuracy                           0.77       152
+   macro avg       0.69      0.67      0.68       152
+weighted avg       0.76      0.77      0.76       152
+
+###################  Gradient Boosting Classifier  ##################
+Trained in : 9.40625
+[[ 23  16]
+ [  4 109]]
+              precision    recall  f1-score   support
+
+           0       0.85      0.59      0.70        39
+           1       0.87      0.96      0.92       113
+
+    accuracy                           0.87       152
+   macro avg       0.86      0.78      0.81       152
+weighted avg       0.87      0.87      0.86       152
+
+###################  Decision Tree  ##################
+Trained in : 0.203125
+[[24 15]
+ [21 92]]
+              precision    recall  f1-score   support
+
+           0       0.53      0.62      0.57        39
+           1       0.86      0.81      0.84       113
+
+    accuracy                           0.76       152
+   macro avg       0.70      0.71      0.70       152
+weighted avg       0.78      0.76      0.77       152
+
+###################  Random Forest  ##################
+Trained in : 10.609375
+[[ 20  19]
+ [  4 109]]
+              precision    recall  f1-score   support
+
+           0       0.83      0.51      0.63        39
+           1       0.85      0.96      0.90       113
+
+    accuracy                           0.85       152
+   macro avg       0.84      0.74      0.77       152
+weighted avg       0.85      0.85      0.84       152
+
+###################  Ada Boost  ##################
+Trained in : 1.9375
+[[ 24  15]
+ [ 11 102]]
+              precision    recall  f1-score   support
+
+           0       0.69      0.62      0.65        39
+           1       0.87      0.90      0.89       113
+
+    accuracy                           0.83       152
+   macro avg       0.78      0.76      0.77       152
+weighted avg       0.82      0.83      0.83       152
+
+############  05  ###################
+############Data from class correlation based-feature selection###################
+   id  gender  ...  tqwt_kurtosisValue_dec_36  class
+0   0       1  ...                    18.9405      1
+1   0       1  ...                    45.1780      1
+2   0       1  ...                     4.7666      1
+3   1       0  ...                     4.0603      1
+4   1       0  ...                     6.1164      1
+
+[5 rows x 278 columns]
+      id  gender  ...  tqwt_kurtosisValue_dec_36  class
+751  250       0  ...                     6.8671      0
+752  250       0  ...                    28.4170      0
+753  251       0  ...                     5.0424      0
+754  251       0  ...                     3.7131      0
+755  251       0  ...                     3.1527      0
+
+[5 rows x 278 columns]
+############Data from random feature selection###################
+   id  gender  ...  tqwt_kurtosisValue_dec_34  class
+0   0       1  ...                     2.6202      1
+1   0       1  ...                     6.5245      1
+2   0       1  ...                     2.9199      1
+3   1       0  ...                     4.8460      1
+4   1       0  ...                     8.2103      1
+
+[5 rows x 278 columns]
+      id  gender  ...  tqwt_kurtosisValue_dec_34  class
+751  250       0  ...                     3.3805      0
+752  250       0  ...                     6.3042      0
+753  251       0  ...                     3.5377      0
+754  251       0  ...                     2.6801      0
+755  251       0  ...                     4.0116      0
+
+[5 rows x 278 columns]
+#################  with class correlation  #####################
+###################  Nearest Neighbors  ##################
+Trained in : 0.0
+[[  6  33]
+ [ 10 103]]
+              precision    recall  f1-score   support
+
+           0       0.38      0.15      0.22        39
+           1       0.76      0.91      0.83       113
+
+    accuracy                           0.72       152
+   macro avg       0.57      0.53      0.52       152
+weighted avg       0.66      0.72      0.67       152
+
+###################  Gradient Boosting Classifier  ##################
+Trained in : 7.4375
+[[ 23  16]
+ [  5 108]]
+              precision    recall  f1-score   support
+
+           0       0.82      0.59      0.69        39
+           1       0.87      0.96      0.91       113
+
+    accuracy                           0.86       152
+   macro avg       0.85      0.77      0.80       152
+weighted avg       0.86      0.86      0.85       152
+
+###################  Decision Tree  ##################
+Trained in : 0.1875
+[[20 19]
+ [20 93]]
+              precision    recall  f1-score   support
+
+           0       0.50      0.51      0.51        39
+           1       0.83      0.82      0.83       113
+
+    accuracy                           0.74       152
+   macro avg       0.67      0.67      0.67       152
+weighted avg       0.75      0.74      0.74       152
+
+###################  Random Forest  ##################
+Trained in : 9.421875
+[[ 21  18]
+ [  3 110]]
+              precision    recall  f1-score   support
+
+           0       0.88      0.54      0.67        39
+           1       0.86      0.97      0.91       113
+
+    accuracy                           0.86       152
+   macro avg       0.87      0.76      0.79       152
+weighted avg       0.86      0.86      0.85       152
+
+###################  Ada Boost  ##################
+Trained in : 1.59375
+[[ 24  15]
+ [ 13 100]]
+              precision    recall  f1-score   support
+
+           0       0.65      0.62      0.63        39
+           1       0.87      0.88      0.88       113
+
+    accuracy                           0.82       152
+   macro avg       0.76      0.75      0.75       152
+weighted avg       0.81      0.82      0.81       152
+
+#################  with random features  #####################
+###################  Nearest Neighbors  ##################
+Trained in : 0.0
+[[ 15  24]
+ [ 13 100]]
+              precision    recall  f1-score   support
+
+           0       0.54      0.38      0.45        39
+           1       0.81      0.88      0.84       113
+
+    accuracy                           0.76       152
+   macro avg       0.67      0.63      0.65       152
+weighted avg       0.74      0.76      0.74       152
+
+###################  Gradient Boosting Classifier  ##################
+Trained in : 7.4375
+[[ 24  15]
+ [  2 111]]
+              precision    recall  f1-score   support
+
+           0       0.92      0.62      0.74        39
+           1       0.88      0.98      0.93       113
+
+    accuracy                           0.89       152
+   macro avg       0.90      0.80      0.83       152
+weighted avg       0.89      0.89      0.88       152
+
+###################  Decision Tree  ##################
+Trained in : 0.21875
+[[24 15]
+ [15 98]]
+              precision    recall  f1-score   support
+
+           0       0.62      0.62      0.62        39
+           1       0.87      0.87      0.87       113
+
+    accuracy                           0.80       152
+   macro avg       0.74      0.74      0.74       152
+weighted avg       0.80      0.80      0.80       152
+
+###################  Random Forest  ##################
+Trained in : 9.609375
+[[ 21  18]
+ [  3 110]]
+              precision    recall  f1-score   support
+
+           0       0.88      0.54      0.67        39
+           1       0.86      0.97      0.91       113
+
+    accuracy                           0.86       152
+   macro avg       0.87      0.76      0.79       152
+weighted avg       0.86      0.86      0.85       152
+
+###################  Ada Boost  ##################
+Trained in : 1.578125
+[[ 24  15]
+ [ 10 103]]
+              precision    recall  f1-score   support
+
+           0       0.71      0.62      0.66        39
+           1       0.87      0.91      0.89       113
+
+    accuracy                           0.84       152
+   macro avg       0.79      0.76      0.77       152
+weighted avg       0.83      0.84      0.83       152
+
+############  03  ###################
+
+#################  with class correlation  #####################
+###################  Nearest Neighbors  ##################
+Trained in : 0.015625
+[[  6  33]
+ [ 10 103]]
+              precision    recall  f1-score   support
+
+           0       0.38      0.15      0.22        39
+           1       0.76      0.91      0.83       113
+
+    accuracy                           0.72       152
+   macro avg       0.57      0.53      0.52       152
+weighted avg       0.66      0.72      0.67       152
+
+###################  Gradient Boosting Classifier  ##################
+Trained in : 5.828125
+[[ 18  21]
+ [  6 107]]
+              precision    recall  f1-score   support
+
+           0       0.75      0.46      0.57        39
+           1       0.84      0.95      0.89       113
+
+    accuracy                           0.82       152
+   macro avg       0.79      0.70      0.73       152
+weighted avg       0.81      0.82      0.81       152
+
+###################  Decision Tree  ##################
+Trained in : 0.140625
+[[22 17]
+ [20 93]]
+              precision    recall  f1-score   support
+
+           0       0.52      0.56      0.54        39
+           1       0.85      0.82      0.83       113
+
+    accuracy                           0.76       152
+   macro avg       0.68      0.69      0.69       152
+weighted avg       0.76      0.76      0.76       152
+
+###################  Random Forest  ##################
+Trained in : 8.6875
+[[ 21  18]
+ [  2 111]]
+              precision    recall  f1-score   support
+
+           0       0.91      0.54      0.68        39
+           1       0.86      0.98      0.92       113
+
+    accuracy                           0.87       152
+   macro avg       0.89      0.76      0.80       152
+weighted avg       0.87      0.87      0.86       152
+
+###################  Ada Boost  ##################
+Trained in : 1.28125
+[[ 21  18]
+ [  9 104]]
+              precision    recall  f1-score   support
+
+           0       0.70      0.54      0.61        39
+           1       0.85      0.92      0.89       113
+
+    accuracy                           0.82       152
+   macro avg       0.78      0.73      0.75       152
+weighted avg       0.81      0.82      0.81       152
+
+#################  with random features  #####################
+###################  Nearest Neighbors  ##################
+Trained in : 0.0
+[[ 12  27]
+ [  8 105]]
+              precision    recall  f1-score   support
+
+           0       0.60      0.31      0.41        39
+           1       0.80      0.93      0.86       113
+
+    accuracy                           0.77       152
+   macro avg       0.70      0.62      0.63       152
+weighted avg       0.75      0.77      0.74       152
+
+###################  Gradient Boosting Classifier  ##################
+Trained in : 5.828125
+[[ 23  16]
+ [  5 108]]
+              precision    recall  f1-score   support
+
+           0       0.82      0.59      0.69        39
+           1       0.87      0.96      0.91       113
+
+    accuracy                           0.86       152
+   macro avg       0.85      0.77      0.80       152
+weighted avg       0.86      0.86      0.85       152
+
+###################  Decision Tree  ##################
+Trained in : 0.125
+[[21 18]
+ [20 93]]
+              precision    recall  f1-score   support
+
+           0       0.51      0.54      0.53        39
+           1       0.84      0.82      0.83       113
+
+    accuracy                           0.75       152
+   macro avg       0.68      0.68      0.68       152
+weighted avg       0.75      0.75      0.75       152
+
+###################  Random Forest  ##################
+Trained in : 8.8125
+[[ 19  20]
+ [  2 111]]
+              precision    recall  f1-score   support
+
+           0       0.90      0.49      0.63        39
+           1       0.85      0.98      0.91       113
+
+    accuracy                           0.86       152
+   macro avg       0.88      0.73      0.77       152
+weighted avg       0.86      0.86      0.84       152
+
+###################  Ada Boost  ##################
+Trained in : 1.28125
+[[ 27  12]
+ [ 10 103]]
+              precision    recall  f1-score   support
+
+           0       0.73      0.69      0.71        39
+           1       0.90      0.91      0.90       113
+
+    accuracy                           0.86       152
+   macro avg       0.81      0.80      0.81       152
+weighted avg       0.85      0.86      0.85       152
+
+
+Process finished with exit code 0
