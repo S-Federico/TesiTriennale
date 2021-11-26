@@ -93,10 +93,10 @@ def main():
     #lettura del dataset e delle feature clusterizzate tramite il dendrogramma
     data=pd.read_csv("../Data/pd_speech_features_firstrowdropped.csv")
     featureclusters07=pd.read_csv("../Features clusters/features07.csv")
-    featureclusters05=pd.read_csv("../Features clusters/features05.csv")
-    featureclusters03=pd.read_csv("../Features clusters/features03.csv")
-    featureclusters02 = pd.read_csv("../Features clusters/features02.csv")
-    featureclusters01 = pd.read_csv("../Features clusters/features01.csv")
+    featureclusters05=pd.read_csv("features05.csv")
+    featureclusters03=pd.read_csv("features03.csv")
+    featureclusters02 = pd.read_csv("features02.csv")
+    featureclusters01 = pd.read_csv("features01.csv")
 
     print('############  07  ###################')
     preprocessed_data_07=select_features(data,featureclusters07)
