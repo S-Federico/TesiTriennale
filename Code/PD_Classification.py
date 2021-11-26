@@ -31,8 +31,10 @@ classifiers = {
 
 
 def trainclassifiers(data, split, verbose):
+
     X = data
     Y = X.pop('class')
+
     x_train, x_test, y_train, y_test = train_test_split(X, Y, stratify=Y, test_size=split, random_state=0)
     models = {}
     for classifier_name, classifier in list(classifiers.items()):
@@ -66,16 +68,18 @@ def trainclassifiers(data, split, verbose):
     return models
 
 
-def select_features(data, featureclusters, criteria='random'):
+def select_features(data, featureclusters):
     corr = data.corr()
     features_selected = []
 
     for i in range(0, featureclusters['Id'].max()):
 
         cluster = featureclusters.loc[featureclusters["Id"] == i + 1, "Name"]
+        featuretoadd=cluster.iloc[randint(0, cluster.shape[0] - 1)]
+        features_selected.append(featuretoadd)
 
-        if criteria == 'random':
-            features_selected.append(cluster.iloc[randint(0, cluster.shape[0] - 1)])
+    if 'class' not in features_selected:
+        features_selected.append('class')
 
     return data[features_selected]
 
@@ -89,46 +93,62 @@ def main():
     featureclusters03 = pd.read_csv("../Features clusters/features03.csv")
     featureclusters02 = pd.read_csv("../Features clusters/features02.csv")
     featureclusters01 = pd.read_csv("../Features clusters/features01.csv")
-    featureclusters005 = pd.read_csv(r"C:\Users\fonde\PycharmProjects\Tesi triennale\Features clusters\features005.csv")
-    featureclusters001 = pd.read_csv(r"C:\Users\fonde\PycharmProjects\Tesi triennale\Features clusters\features001.csv")
+    featureclusters005 = pd.read_csv("../Features clusters/features005.csv")
+    featureclusters001 = pd.read_csv("../Features clusters/features001.csv")
 
     print(
-        '##########################\n############  Results using threshold 0.9  ###################\n###########################')
+        '##############################################################'
+        '\n############  Results using threshold 0.9  ###################'
+        '\n##############################################################')
     preprocessed_data_09 = select_features(data, featureclusters09)
     classifiers09 = trainclassifiers(preprocessed_data_09, split=0.2, verbose=True)
 
     print(
-        '##########################\n############  Results using threshold 0.7  ###################\n###########################')
+        '##############################################################'
+        '\n############  Results using threshold 0.7  ###################'
+        '\n##############################################################')
     preprocessed_data_07 = select_features(data, featureclusters07)
     classifiers07 = trainclassifiers(preprocessed_data_07, split=0.2, verbose=True)
 
     print(
-        '##########################\n############  Results using threshold 0.5  ###################\n###########################')
+        '##############################################################'
+        '\n############  Results using threshold 0.5  ###################'
+        '\n##############################################################')
     preprocessed_data_05 = select_features(data, featureclusters05)
     classifiers05 = trainclassifiers(preprocessed_data_05, split=0.2, verbose=True)
 
     print(
-        '##########################\n############  Results using threshold 0.3  ###################\n###########################')
+        '##############################################################'
+        '\n############  Results using threshold 0.3  ###################'
+        '\n##############################################################')
     preprocessed_data_03 = select_features(data, featureclusters03)
     classifiers03 = trainclassifiers(preprocessed_data_03, split=0.2, verbose=True)
 
     print(
-        '##########################\n############  Results using threshold 0.2  ###################\n###########################')
+        '##############################################################'
+        '\n############  Results using threshold 0.2  ###################'
+        '\n##############################################################')
     preprocessed_data_02 = select_features(data, featureclusters02)
     classifiers02 = trainclassifiers(preprocessed_data_02, split=0.2, verbose=True)
 
     print(
-        '##########################\n############  Results using threshold 0.1  ###################\n###########################')
+        '##############################################################'
+        '\n############  Results using threshold 0.1  ###################'
+        '\n##############################################################')
     preprocessed_data_01 = select_features(data, featureclusters01)
     classifiers01 = trainclassifiers(preprocessed_data_01, split=0.2, verbose=True)
 
     print(
-        '##########################\n############  Results using threshold 0.05  ###################\n###########################')
+        '##############################################################'
+        '\n############  Results using threshold 0.05  ###################'
+        '\n##############################################################')
     preprocessed_data_005 = select_features(data, featureclusters005)
     classifiers005 = trainclassifiers(preprocessed_data_005, split=0.2, verbose=True)
 
     print(
-        '##########################\n############  Results using threshold 0.01  ###################\n###########################')
+        '##############################################################'
+        '\n############  Results using threshold 0.01  ###################'
+        '\n##############################################################')
     preprocessed_data_001 = select_features(data, featureclusters001)
     classifiers001 = trainclassifiers(preprocessed_data_001, split=0.2, verbose=True)
 
