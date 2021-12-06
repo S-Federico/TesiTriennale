@@ -1,7 +1,7 @@
 import time
 from random import randint
-
 import pandas as pd
+from imblearn.over_sampling import SMOTE
 from sklearn.dummy import DummyClassifier
 from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier, AdaBoostClassifier
 from sklearn.linear_model import LogisticRegression, Perceptron
@@ -30,12 +30,18 @@ classifiers = {
 }
 
 
-def trainclassifiers(data, split, verbose):
+def trainclassifiers(data, split, verbose,balance_data=True):
 
     X = data
     Y = X.pop('class')
 
     x_train, x_test, y_train, y_test = train_test_split(X, Y, stratify=Y, test_size=split, random_state=0)
+
+    if balance_data:
+        smote = SMOTE('not majority', random_state=1)
+        x_train, y_train = smote.fit_resample(x_train, y_train)
+        x_test, y_test = smote.fit_resample(x_test, y_test)
+
     models = {}
     for classifier_name, classifier in list(classifiers.items()):
 
