@@ -1,0 +1,580 @@
+##############################################################
+############  Results using threshold 0.9  ###################
+##############################################################
+C:\Users\fonde\PycharmProjects\Tesi triennale\venv\lib\site-packages\imblearn\utils\_validation.py:587: FutureWarning: Pass sampling_strategy=not majority as keyword args. From version 0.9 passing these as positional arguments will result in an error
+  warnings.warn(
+###################  Nearest Neighbors  ##################
+Trained in : 0.03125
+[[110   3]
+ [ 43  70]]
+              precision    recall  f1-score   support
+
+         0.0       0.72      0.97      0.83       113
+         1.0       0.96      0.62      0.75       113
+
+    accuracy                           0.80       226
+   macro avg       0.84      0.80      0.79       226
+weighted avg       0.84      0.80      0.79       226
+
+###################  Gradient Boosting Classifier  ##################
+Trained in : 13.703125
+[[ 86  27]
+ [ 11 102]]
+              precision    recall  f1-score   support
+
+         0.0       0.89      0.76      0.82       113
+         1.0       0.79      0.90      0.84       113
+
+    accuracy                           0.83       226
+   macro avg       0.84      0.83      0.83       226
+weighted avg       0.84      0.83      0.83       226
+
+###################  Decision Tree  ##################
+Trained in : 0.390625
+[[67 46]
+ [20 93]]
+              precision    recall  f1-score   support
+
+         0.0       0.77      0.59      0.67       113
+         1.0       0.67      0.82      0.74       113
+
+    accuracy                           0.71       226
+   macro avg       0.72      0.71      0.70       226
+weighted avg       0.72      0.71      0.70       226
+
+###################  Random Forest  ##################
+Trained in : 13.34375
+[[ 77  36]
+ [ 10 103]]
+              precision    recall  f1-score   support
+
+         0.0       0.89      0.68      0.77       113
+         1.0       0.74      0.91      0.82       113
+
+    accuracy                           0.80       226
+   macro avg       0.81      0.80      0.79       226
+weighted avg       0.81      0.80      0.79       226
+
+###################  Naive Bayes  ##################
+Trained in : 0.015625
+[[81 32]
+ [43 70]]
+              precision    recall  f1-score   support
+
+         0.0       0.65      0.72      0.68       113
+         1.0       0.69      0.62      0.65       113
+
+    accuracy                           0.67       226
+   macro avg       0.67      0.67      0.67       226
+weighted avg       0.67      0.67      0.67       226
+
+###################  Ada Boost  ##################
+Trained in : 3.03125
+[[ 84  29]
+ [ 10 103]]
+              precision    recall  f1-score   support
+
+         0.0       0.89      0.74      0.81       113
+         1.0       0.78      0.91      0.84       113
+
+    accuracy                           0.83       226
+   macro avg       0.84      0.83      0.83       226
+weighted avg       0.84      0.83      0.83       226
+
+##############################################################
+############  Results using threshold 0.7  ###################
+##############################################################
+C:\Users\fonde\PycharmProjects\Tesi triennale\venv\lib\site-packages\imblearn\utils\_validation.py:587: FutureWarning: Pass sampling_strategy=not majority as keyword args. From version 0.9 passing these as positional arguments will result in an error
+  warnings.warn(
+###################  Nearest Neighbors  ##################
+Trained in : 0.015625
+[[110   3]
+ [ 40  73]]
+              precision    recall  f1-score   support
+
+         0.0       0.73      0.97      0.84       113
+         1.0       0.96      0.65      0.77       113
+
+    accuracy                           0.81       226
+   macro avg       0.85      0.81      0.80       226
+weighted avg       0.85      0.81      0.80       226
+
+###################  Gradient Boosting Classifier  ##################
+Trained in : 10.203125
+[[ 87  26]
+ [ 12 101]]
+              precision    recall  f1-score   support
+
+         0.0       0.88      0.77      0.82       113
+         1.0       0.80      0.89      0.84       113
+
+    accuracy                           0.83       226
+   macro avg       0.84      0.83      0.83       226
+weighted avg       0.84      0.83      0.83       226
+
+###################  Decision Tree  ##################
+Trained in : 0.328125
+[[71 42]
+ [30 83]]
+              precision    recall  f1-score   support
+
+         0.0       0.70      0.63      0.66       113
+         1.0       0.66      0.73      0.70       113
+
+    accuracy                           0.68       226
+   macro avg       0.68      0.68      0.68       226
+weighted avg       0.68      0.68      0.68       226
+
+###################  Random Forest  ##################
+Trained in : 11.46875
+[[ 76  37]
+ [ 11 102]]
+              precision    recall  f1-score   support
+
+         0.0       0.87      0.67      0.76       113
+         1.0       0.73      0.90      0.81       113
+
+    accuracy                           0.79       226
+   macro avg       0.80      0.79      0.78       226
+weighted avg       0.80      0.79      0.78       226
+
+###################  Naive Bayes  ##################
+Trained in : 0.015625
+[[84 29]
+ [43 70]]
+              precision    recall  f1-score   support
+
+         0.0       0.66      0.74      0.70       113
+         1.0       0.71      0.62      0.66       113
+
+    accuracy                           0.68       226
+   macro avg       0.68      0.68      0.68       226
+weighted avg       0.68      0.68      0.68       226
+
+###################  Ada Boost  ##################
+Trained in : 2.296875
+[[91 22]
+ [17 96]]
+              precision    recall  f1-score   support
+
+         0.0       0.84      0.81      0.82       113
+         1.0       0.81      0.85      0.83       113
+
+    accuracy                           0.83       226
+   macro avg       0.83      0.83      0.83       226
+weighted avg       0.83      0.83      0.83       226
+
+##############################################################
+############  Results using threshold 0.5  ###################
+##############################################################
+C:\Users\fonde\PycharmProjects\Tesi triennale\venv\lib\site-packages\imblearn\utils\_validation.py:587: FutureWarning: Pass sampling_strategy=not majority as keyword args. From version 0.9 passing these as positional arguments will result in an error
+  warnings.warn(
+###################  Nearest Neighbors  ##################
+Trained in : 0.015625
+[[108   5]
+ [ 37  76]]
+              precision    recall  f1-score   support
+
+         0.0       0.74      0.96      0.84       113
+         1.0       0.94      0.67      0.78       113
+
+    accuracy                           0.81       226
+   macro avg       0.84      0.81      0.81       226
+weighted avg       0.84      0.81      0.81       226
+
+###################  Gradient Boosting Classifier  ##################
+Trained in : 8.234375
+[[ 85  28]
+ [ 12 101]]
+              precision    recall  f1-score   support
+
+         0.0       0.88      0.75      0.81       113
+         1.0       0.78      0.89      0.83       113
+
+    accuracy                           0.82       226
+   macro avg       0.83      0.82      0.82       226
+weighted avg       0.83      0.82      0.82       226
+
+###################  Decision Tree  ##################
+Trained in : 0.296875
+[[78 35]
+ [18 95]]
+              precision    recall  f1-score   support
+
+         0.0       0.81      0.69      0.75       113
+         1.0       0.73      0.84      0.78       113
+
+    accuracy                           0.77       226
+   macro avg       0.77      0.77      0.76       226
+weighted avg       0.77      0.77      0.76       226
+
+###################  Random Forest  ##################
+Trained in : 10.34375
+[[ 75  38]
+ [  9 104]]
+              precision    recall  f1-score   support
+
+         0.0       0.89      0.66      0.76       113
+         1.0       0.73      0.92      0.82       113
+
+    accuracy                           0.79       226
+   macro avg       0.81      0.79      0.79       226
+weighted avg       0.81      0.79      0.79       226
+
+###################  Naive Bayes  ##################
+Trained in : 0.015625
+[[82 31]
+ [45 68]]
+              precision    recall  f1-score   support
+
+         0.0       0.65      0.73      0.68       113
+         1.0       0.69      0.60      0.64       113
+
+    accuracy                           0.66       226
+   macro avg       0.67      0.66      0.66       226
+weighted avg       0.67      0.66      0.66       226
+
+###################  Ada Boost  ##################
+Trained in : 1.796875
+[[82 31]
+ [15 98]]
+              precision    recall  f1-score   support
+
+         0.0       0.85      0.73      0.78       113
+         1.0       0.76      0.87      0.81       113
+
+    accuracy                           0.80       226
+   macro avg       0.80      0.80      0.80       226
+weighted avg       0.80      0.80      0.80       226
+
+##############################################################
+############  Results using threshold 0.3  ###################
+##############################################################
+C:\Users\fonde\PycharmProjects\Tesi triennale\venv\lib\site-packages\imblearn\utils\_validation.py:587: FutureWarning: Pass sampling_strategy=not majority as keyword args. From version 0.9 passing these as positional arguments will result in an error
+  warnings.warn(
+###################  Nearest Neighbors  ##################
+Trained in : 0.015625
+[[112   1]
+ [ 42  71]]
+              precision    recall  f1-score   support
+
+         0.0       0.73      0.99      0.84       113
+         1.0       0.99      0.63      0.77       113
+
+    accuracy                           0.81       226
+   macro avg       0.86      0.81      0.80       226
+weighted avg       0.86      0.81      0.80       226
+
+###################  Gradient Boosting Classifier  ##################
+Trained in : 6.609375
+[[ 85  28]
+ [  9 104]]
+              precision    recall  f1-score   support
+
+         0.0       0.90      0.75      0.82       113
+         1.0       0.79      0.92      0.85       113
+
+    accuracy                           0.84       226
+   macro avg       0.85      0.84      0.84       226
+weighted avg       0.85      0.84      0.84       226
+
+###################  Decision Tree  ##################
+Trained in : 0.25
+[[82 31]
+ [23 90]]
+              precision    recall  f1-score   support
+
+         0.0       0.78      0.73      0.75       113
+         1.0       0.74      0.80      0.77       113
+
+    accuracy                           0.76       226
+   macro avg       0.76      0.76      0.76       226
+weighted avg       0.76      0.76      0.76       226
+
+###################  Random Forest  ##################
+Trained in : 9.296875
+[[ 72  41]
+ [  8 105]]
+              precision    recall  f1-score   support
+
+         0.0       0.90      0.64      0.75       113
+         1.0       0.72      0.93      0.81       113
+
+    accuracy                           0.78       226
+   macro avg       0.81      0.78      0.78       226
+weighted avg       0.81      0.78      0.78       226
+
+###################  Naive Bayes  ##################
+Trained in : 0.0
+[[77 36]
+ [44 69]]
+              precision    recall  f1-score   support
+
+         0.0       0.64      0.68      0.66       113
+         1.0       0.66      0.61      0.63       113
+
+    accuracy                           0.65       226
+   macro avg       0.65      0.65      0.65       226
+weighted avg       0.65      0.65      0.65       226
+
+###################  Ada Boost  ##################
+Trained in : 1.484375
+[[ 82  31]
+ [ 11 102]]
+              precision    recall  f1-score   support
+
+         0.0       0.88      0.73      0.80       113
+         1.0       0.77      0.90      0.83       113
+
+    accuracy                           0.81       226
+   macro avg       0.82      0.81      0.81       226
+weighted avg       0.82      0.81      0.81       226
+
+##############################################################
+############  Results using threshold 0.2  ###################
+##############################################################
+C:\Users\fonde\PycharmProjects\Tesi triennale\venv\lib\site-packages\imblearn\utils\_validation.py:587: FutureWarning: Pass sampling_strategy=not majority as keyword args. From version 0.9 passing these as positional arguments will result in an error
+  warnings.warn(
+###################  Nearest Neighbors  ##################
+Trained in : 0.015625
+[[106   7]
+ [ 44  69]]
+              precision    recall  f1-score   support
+
+         0.0       0.71      0.94      0.81       113
+         1.0       0.91      0.61      0.73       113
+
+    accuracy                           0.77       226
+   macro avg       0.81      0.77      0.77       226
+weighted avg       0.81      0.77      0.77       226
+
+###################  Gradient Boosting Classifier  ##################
+Trained in : 6.015625
+[[ 73  40]
+ [ 13 100]]
+              precision    recall  f1-score   support
+
+         0.0       0.85      0.65      0.73       113
+         1.0       0.71      0.88      0.79       113
+
+    accuracy                           0.77       226
+   macro avg       0.78      0.77      0.76       226
+weighted avg       0.78      0.77      0.76       226
+
+###################  Decision Tree  ##################
+Trained in : 0.1875
+[[73 40]
+ [20 93]]
+              precision    recall  f1-score   support
+
+         0.0       0.78      0.65      0.71       113
+         1.0       0.70      0.82      0.76       113
+
+    accuracy                           0.73       226
+   macro avg       0.74      0.73      0.73       226
+weighted avg       0.74      0.73      0.73       226
+
+###################  Random Forest  ##################
+Trained in : 9.3125
+[[ 63  50]
+ [  9 104]]
+              precision    recall  f1-score   support
+
+         0.0       0.88      0.56      0.68       113
+         1.0       0.68      0.92      0.78       113
+
+    accuracy                           0.74       226
+   macro avg       0.78      0.74      0.73       226
+weighted avg       0.78      0.74      0.73       226
+
+###################  Naive Bayes  ##################
+Trained in : 0.0
+[[83 30]
+ [44 69]]
+              precision    recall  f1-score   support
+
+         0.0       0.65      0.73      0.69       113
+         1.0       0.70      0.61      0.65       113
+
+    accuracy                           0.67       226
+   macro avg       0.68      0.67      0.67       226
+weighted avg       0.68      0.67      0.67       226
+
+###################  Ada Boost  ##################
+Trained in : 1.359375
+[[76 37]
+ [17 96]]
+              precision    recall  f1-score   support
+
+         0.0       0.82      0.67      0.74       113
+         1.0       0.72      0.85      0.78       113
+
+    accuracy                           0.76       226
+   macro avg       0.77      0.76      0.76       226
+weighted avg       0.77      0.76      0.76       226
+
+##############################################################
+############  Results using threshold 0.1  ###################
+##############################################################
+C:\Users\fonde\PycharmProjects\Tesi triennale\venv\lib\site-packages\imblearn\utils\_validation.py:587: FutureWarning: Pass sampling_strategy=not majority as keyword args. From version 0.9 passing these as positional arguments will result in an error
+  warnings.warn(
+###################  Nearest Neighbors  ##################
+Trained in : 0.0
+[[104   9]
+ [ 49  64]]
+              precision    recall  f1-score   support
+
+         0.0       0.68      0.92      0.78       113
+         1.0       0.88      0.57      0.69       113
+
+    accuracy                           0.74       226
+   macro avg       0.78      0.74      0.74       226
+weighted avg       0.78      0.74      0.74       226
+
+###################  Gradient Boosting Classifier  ##################
+Trained in : 5.3125
+[[ 79  34]
+ [ 13 100]]
+              precision    recall  f1-score   support
+
+         0.0       0.86      0.70      0.77       113
+         1.0       0.75      0.88      0.81       113
+
+    accuracy                           0.79       226
+   macro avg       0.80      0.79      0.79       226
+weighted avg       0.80      0.79      0.79       226
+
+###################  Decision Tree  ##################
+Trained in : 0.21875
+[[88 25]
+ [23 90]]
+              precision    recall  f1-score   support
+
+         0.0       0.79      0.78      0.79       113
+         1.0       0.78      0.80      0.79       113
+
+    accuracy                           0.79       226
+   macro avg       0.79      0.79      0.79       226
+weighted avg       0.79      0.79      0.79       226
+
+###################  Random Forest  ##################
+Trained in : 8.78125
+[[ 67  46]
+ [ 10 103]]
+              precision    recall  f1-score   support
+
+         0.0       0.87      0.59      0.71       113
+         1.0       0.69      0.91      0.79       113
+
+    accuracy                           0.75       226
+   macro avg       0.78      0.75      0.75       226
+weighted avg       0.78      0.75      0.75       226
+
+###################  Naive Bayes  ##################
+Trained in : 0.015625
+[[76 37]
+ [49 64]]
+              precision    recall  f1-score   support
+
+         0.0       0.61      0.67      0.64       113
+         1.0       0.63      0.57      0.60       113
+
+    accuracy                           0.62       226
+   macro avg       0.62      0.62      0.62       226
+weighted avg       0.62      0.62      0.62       226
+
+###################  Ada Boost  ##################
+Trained in : 1.1875
+[[82 31]
+ [16 97]]
+              precision    recall  f1-score   support
+
+         0.0       0.84      0.73      0.78       113
+         1.0       0.76      0.86      0.80       113
+
+    accuracy                           0.79       226
+   macro avg       0.80      0.79      0.79       226
+weighted avg       0.80      0.79      0.79       226
+
+##############################################################
+############  Results using threshold 0.05  ###################
+##############################################################
+C:\Users\fonde\PycharmProjects\Tesi triennale\venv\lib\site-packages\imblearn\utils\_validation.py:587: FutureWarning: Pass sampling_strategy=not majority as keyword args. From version 0.9 passing these as positional arguments will result in an error
+  warnings.warn(
+###################  Nearest Neighbors  ##################
+Trained in : 0.0
+[[93 20]
+ [43 70]]
+              precision    recall  f1-score   support
+
+         0.0       0.68      0.82      0.75       113
+         1.0       0.78      0.62      0.69       113
+
+    accuracy                           0.72       226
+   macro avg       0.73      0.72      0.72       226
+weighted avg       0.73      0.72      0.72       226
+
+###################  Gradient Boosting Classifier  ##################
+Trained in : 4.71875
+[[ 75  38]
+ [ 12 101]]
+              precision    recall  f1-score   support
+
+         0.0       0.86      0.66      0.75       113
+         1.0       0.73      0.89      0.80       113
+
+    accuracy                           0.78       226
+   macro avg       0.79      0.78      0.78       226
+weighted avg       0.79      0.78      0.78       226
+
+###################  Decision Tree  ##################
+Trained in : 0.140625
+[[47 66]
+ [21 92]]
+              precision    recall  f1-score   support
+
+         0.0       0.69      0.42      0.52       113
+         1.0       0.58      0.81      0.68       113
+
+    accuracy                           0.62       226
+   macro avg       0.64      0.62      0.60       226
+weighted avg       0.64      0.62      0.60       226
+
+###################  Random Forest  ##################
+Trained in : 7.890625
+[[ 62  51]
+ [ 10 103]]
+              precision    recall  f1-score   support
+
+         0.0       0.86      0.55      0.67       113
+         1.0       0.67      0.91      0.77       113
+
+    accuracy                           0.73       226
+   macro avg       0.76      0.73      0.72       226
+weighted avg       0.76      0.73      0.72       226
+
+###################  Naive Bayes  ##################
+Trained in : 0.0
+[[66 47]
+ [39 74]]
+              precision    recall  f1-score   support
+
+         0.0       0.63      0.58      0.61       113
+         1.0       0.61      0.65      0.63       113
+
+    accuracy                           0.62       226
+   macro avg       0.62      0.62      0.62       226
+weighted avg       0.62      0.62      0.62       226
+
+###################  Ada Boost  ##################
+Trained in : 1.09375
+[[73 40]
+ [18 95]]
+              precision    recall  f1-score   support
+
+         0.0       0.80      0.65      0.72       113
+         1.0       0.70      0.84      0.77       113
+
+    accuracy                           0.74       226
+   macro avg       0.75      0.74      0.74       226
+weighted avg       0.75      0.74      0.74       226

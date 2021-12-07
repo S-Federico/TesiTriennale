@@ -2,9 +2,9 @@ import time
 from random import randint
 import pandas as pd
 from imblearn.over_sampling import SMOTE
-from sklearn.dummy import DummyClassifier
 from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier, AdaBoostClassifier
-from sklearn.linear_model import LogisticRegression, Perceptron
+from sklearn.gaussian_process import GaussianProcessClassifier
+from sklearn.linear_model import LogisticRegression, Perceptron, LogisticRegressionCV
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
@@ -14,24 +14,23 @@ from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 
 classifiers = {
-    #'Logistic Regression': LogisticRegression(max_iter=1000),
+    'Logistic Regression': LogisticRegression(max_iter=1000),
     'Nearest Neighbors': KNeighborsClassifier(),
-    #'Perceptron': Perceptron(),
-    #'Multi Layer Perceptron': MLPClassifier(),
-    #'Linear SVM': SVC(),
+    'Perceptron': Perceptron(),
+    'Multi Layer Perceptron': MLPClassifier(),
+    'Linear SVM': SVC(),
     'Gradient Boosting Classifier': GradientBoostingClassifier(n_estimators=100),
     'Decision Tree': DecisionTreeClassifier(),
     'Random Forest': RandomForestClassifier(n_estimators=1000),
     'Naive Bayes': GaussianNB(),
     'Ada Boost': AdaBoostClassifier(),
-    # 'QDA': QuadraticDiscriminantAnalysis(),
-    # 'Gaussian Process': GaussianProcessClassifier(),
-    #'Dummy Classifier uniform': DummyClassifier(strategy='uniform'),
+    'Gaussian Process': GaussianProcessClassifier(),
 }
 
 
-def trainclassifiers(data, split, verbose,balance_data=True):
-
+def trainclassifiers(data, split, verbose,balance_data=True,normalization=True):
+    if(normalization):
+        data=normalize(data)
     X = data
     Y = X.pop('class')
 
@@ -73,6 +72,13 @@ def trainclassifiers(data, split, verbose,balance_data=True):
 
     return models
 
+def normalize(df):
+    result = df.copy()
+    for feature_name in df.columns:
+        max_value = df[feature_name].max()
+        min_value = df[feature_name].min()
+        result[feature_name] = (df[feature_name] - min_value) / (max_value - min_value)
+    return result
 
 def select_features(data, featureclusters):
     corr = data.corr()
@@ -86,8 +92,9 @@ def select_features(data, featureclusters):
 
     if 'class' not in features_selected:
         features_selected.append('class')
-
-    return data[features_selected]
+    new_data=data[features_selected]
+    new_data.pop('id')
+    return new_data
 
 
 def main():
@@ -101,6 +108,7 @@ def main():
     featureclusters01 = pd.read_csv("../Features clusters/features01.csv")
     featureclusters005 = pd.read_csv("../Features clusters/features005.csv")
     featureclusters001 = pd.read_csv("../Features clusters/features001.csv")
+
 
     print(
         '##############################################################'
